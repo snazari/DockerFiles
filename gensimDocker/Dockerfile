@@ -42,4 +42,4 @@ RUN pip install pycld2
 ENV PATH /opt/conda/bin:$PATH
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD [ "/opt/conda/bin/jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser" ]
+CMD [ "/bin/bash" ]
