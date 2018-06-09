@@ -1,0 +1,9 @@
+version: "2"
+services:
+  graph_tool:
+    image: samnazari/gt:latest
+    ports:
+      - 9009:8888
+    volumes:
+      - /disk1/MAA:/MAA
+    container_name: magic_show
