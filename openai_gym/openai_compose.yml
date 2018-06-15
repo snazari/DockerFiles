@@ -1,0 +1,9 @@
+version: "3"
+services:
+    openAI_gym:
+        image: jaimeps/rl-gym
+        ports:
+            - 9015:8888 #9009:8888
+        volumes:
+            - .:/workspace
+        container_name: rl-gym #magic_show

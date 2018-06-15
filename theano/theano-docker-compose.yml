@@ -1,0 +1,9 @@
+version: "3"
+services:
+    graph_tool:
+        image: floydhub/theano:0.8.2-py3.6 #samnazari/gt:latest
+        ports:
+            - 9010:8888 #9009:8888
+        volumes:
+            - .:/workspace
+        container_name: theano_gd #magic_show
